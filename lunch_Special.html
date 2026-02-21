@@ -116,11 +116,11 @@
     var Day=myDate.getDate();//获取当前天数
     var myHours= myDate.getHours();//获取当前小时数
 // 根据当前的小时来判断活动开始时间是今天16点还是明天16点
-    if(myHours < 16 ){
-        time2=new Date(Year+'/'+Month+'/'+Day+' 16:00:00');
+    if(myHours < 15 ){
+        time2=new Date(Year+'/'+Month+'/'+Day+' 15:00:00');
     }else{
         Day+=1;
-        time2=new Date(Year+'/'+Month+'/'+Day+' 16:00:00');
+        time2=new Date(Year+'/'+Month+'/'+Day+' 15:00:00');
     }
     var i=time2.getTime()-myDate.getTime();
 
@@ -203,3 +203,4 @@
 
 
 </html>
+
